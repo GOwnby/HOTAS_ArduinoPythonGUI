@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en" data-mode="auto" data-theme="dark"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Matplotlib documentation — Matplotlib 3.8.3 documentation</title>
+<script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+
+<link href="Matplotlib%20documentation%20%E2%80%94%20Matplotlib%203.8.3%20documentation_files/theme.css" rel="stylesheet">
+<link href="Matplotlib%20documentation%20%E2%80%94%20Matplotlib%203.8.3%20documentation_files/bootstrap.css" rel="stylesheet">
+<link href="Matplotlib%20documentation%20%E2%80%94%20Matplotlib%203.8.3%20documentation_files/pydata-sphinx-theme.css" rel="stylesheet">
+<link href="Matplotlib%20documentation%20%E2%80%94%20Matplotlib%203.8.3%20documentation_files/all.min.css" rel="stylesheet">
+<link rel="preload" as="font" type="font/woff2" crossorigin="" href="https://matplotlib.org/3.8.3/_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin="" href="https://matplotlib.org/3.8.3/_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin="" href="https://matplotlib.org/3.8.3/_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2">
+<link rel="stylesheet" type="text/css" href="Matplotlib%20documentation%20%E2%80%94%20Matplotlib%203.8.3%20documentation_files/pygments.css">
+<link rel="stylesheet" type="text/css" href="Matplotlib%20documentation%20%E2%80%94%20Matplotlib%203.8.3%20documentation_files/style.css">
+<link rel="stylesheet" type="text/css" href="Matplotlib%20documentation%20%E2%80%94%20Matplotlib%203.8.3%20documentation_files/graphviz.css">
+<link rel="stylesheet" type="text/css" href="Matplotlib%20documentation%20%E2%80%94%20Matplotlib%203.8.3%20documentation_files/plot_directive.css">
+<link rel="stylesheet" type="text/css" href="Matplotlib%20documentation%20%E2%80%94%20Matplotlib%203.8.3%20documentation_files/copybutton.css">
+<link rel="stylesheet" type="text/css" href="Matplotlib%20documentation%20%E2%80%94%20Matplotlib%203.8.3%20documentation_files/sg_gallery.css">
+<link rel="stylesheet" type="text/css" href="Matplotlib%20documentation%20%E2%80%94%20Matplotlib%203.8.3%20documentation_files/sg_gallery-binder.css">
+<link rel="stylesheet" type="text/css" href="Matplotlib%20documentation%20%E2%80%94%20Matplotlib%203.8.3%20documentation_files/sg_gallery-dataframe.css">
+<link rel="stylesheet" type="text/css" href="Matplotlib%20documentation%20%E2%80%94%20Matplotlib%203.8.3%20documentation_files/sg_gallery-rendered-html.css">
+<link rel="stylesheet" type="text/css" href="Matplotlib%20documentation%20%E2%80%94%20Matplotlib%203.8.3%20documentation_files/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css">
+<link rel="stylesheet" type="text/css" href="Matplotlib%20documentation%20%E2%80%94%20Matplotlib%203.8.3%20documentation_files/mpl.css">
+
+<link rel="preload" as="script" href="Matplotlib%20documentation%20%E2%80%94%20Matplotlib%203.8.3%20documentation_files/bootstrap.js">
+<link rel="preload" as="script" href="Matplotlib%20documentation%20%E2%80%94%20Matplotlib%203.8.3%20documentation_files/pydata-sphinx-theme.js">
+<script src="Matplotlib%20documentation%20%E2%80%94%20Matplotlib%203.8.3%20documentation_files/documentation_options.js" type="text/javascript"></script>
+<script src="Matplotlib%20documentation%20%E2%80%94%20Matplotlib%203.8.3%20documentation_files/doctools.js" type="text/javascript"></script>
+<script src="Matplotlib%20documentation%20%E2%80%94%20Matplotlib%203.8.3%20documentation_files/sphinx_highlight.js" type="text/javascript"></script>
+<script src="Matplotlib%20documentation%20%E2%80%94%20Matplotlib%203.8.3%20documentation_files/clipboard.min.js" type="text/javascript"></script>
+<script src="Matplotlib%20documentation%20%E2%80%94%20Matplotlib%203.8.3%20documentation_files/copybutton.js" type="text/javascript"></script>
+<script src="Matplotlib%20documentation%20%E2%80%94%20Matplotlib%203.8.3%20documentation_files/design-tabs.js" type="text/javascript"></script>
+<script data-domain="matplotlib.org" defer="defer" src="Matplotlib%20documentation%20%E2%80%94%20Matplotlib%203.8.3%20documentation_files/script.js" type="text/javascript"></script>
+<script type="text/javascript">DOCUMENTATION_OPTIONS.pagename = 'index';</script>
+<script type="text/javascript">
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://matplotlib.org/devdocs/_static/switcher.json?v3.8.3-2-g6175ebf59d';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'stable';
+        </script>
+<link rel="canonical" href="https://matplotlib.org/stable/index.html">
+<link rel="search" type="application/opensearchdescription+xml" title="Search within Matplotlib 3.8.3 documentation" href="https://matplotlib.org/3.8.3/_static/opensearch.xml">
+<link rel="icon" href="https://matplotlib.org/3.8.3/_static/favicon.ico">
+<link rel="search" title="Search" href="https://matplotlib.org/3.8.3/search.html">
+<link rel="next" title="Installation" href="https://matplotlib.org/3.8.3/users/installing/index.html">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="docsearch:language" content="en">
+</head>
+<body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<input type="checkbox" class="sidebar-toggle" name="__primary" id="__primary">
+<label class="overlay overlay-primary" for="__primary"></label>
+<input type="checkbox" class="sidebar-toggle" name="__secondary" id="__secondary">
+<label class="overlay overlay-secondary" for="__secondary"></label>
+<div class="search-button__wrapper">
+<div class="search-button__overlay"></div>
+<div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center" action="search.html" method="get">
+<i class="fa-solid fa-magnifying-glass"></i>
+<input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false">
+<span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+</div>
+<nav class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+<label class="sidebar-toggle primary-toggle" for="__primary">
+<span class="fa-solid fa-bars"></span>
+</label>
+<div class="navbar-header-items__start">
+<div class="navbar-item">
+<a class="navbar-brand logo" href="https://matplotlib.org/stable/">
+<img src="Matplotlib%20documentation%20%E2%80%94%20Matplotlib%203.8.3%20documentation_files/logo_light.svg" class="logo__image only-light" alt="Logo image">
+<script type="text/javascript">document.write(`<img src="_static/logo_dark.svg" class="logo__image only-dark" alt="Logo image"/>`);</script><img src="Matplotlib%20documentation%20%E2%80%94%20Matplotlib%203.8.3%20documentation_files/logo_dark.svg" class="logo__image only-dark" alt="Logo image">
+</a></div>
+</div>
+<div class="col-lg-9 navbar-header-items">
+<div class="me-auto navbar-header-items__center">
+<div class="navbar-item"><ul id="navbar-main-elements" class="navbar-nav">
+<li class="nav-item">
+<a class="reference internal nav-link" href="https://matplotlib.org/3.8.3/plot_types/index.html">Plot types</a>
+</li>
+<li class="nav-item">
+<a class="reference internal nav-link" href="https://matplotlib.org/3.8.3/users/index.html">User guide</a>
+</li>
+<li class="nav-item">
+<a class="reference internal nav-link" href="https://matplotlib.org/3.8.3/tutorials/index.html">Tutorials</a>
+</li>
+<li class="nav-item">
+<a class="reference internal nav-link" href="https://matplotlib.org/3.8.3/gallery/index.html">Examples</a>
+</li>
+<li class="nav-item">
+<a class="reference internal nav-link" href="https://matplotlib.org/3.8.3/api/index.html">Reference</a>
+</li>
+<li class="nav-item">
+<a class="reference internal nav-link" href="https://matplotlib.org/3.8.3/devel/index.html">Contribute</a>
+</li>
+<li class="nav-item">
+<a class="reference internal nav-link" href="https://matplotlib.org/3.8.3/users/release_notes.html">Releases</a>
+</li>
+</ul></div>
+</div>
+<div class="navbar-header-items__end">
+<div class="navbar-item navbar-persistent--container">
+<script type="text/javascript">
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+  <button class="btn btn-sm navbar-btn search-button search-button__button" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip" data-bs-original-title="Search">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+
+</div>
+<div class="navbar-item">
+<script type="text/javascript">
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip" data-bs-original-title="light/dark">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+</div>
+<div class="navbar-item">
+<script type="text/javascript">
+document.write(`
+  <div class="version-switcher__container dropdown">
+    <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-bs-toggle="dropdown">
+      stable  <!-- this text may get changed later by javascript -->
+      <span class="caret"></span>
+    </button>
+    <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+  </div>
+`);
+</script>
+  <div class="version-switcher__container dropdown">
+    <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-bs-toggle="dropdown" data-active-version-name="" data-active-version="">
+      stable  <!-- this text may get changed later by javascript -->
+      <span class="caret"></span>
+    </button>
+    <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+    <!-- dropdown will be populated by javascript on page load -->
+    <a class="list-group-item list-group-item-action py-1" href="https://matplotlib.org/3.9.0/index.html" data-version-name="3.9 (rc)" data-version="rc"><span>3.9 (rc)</span></a><a class="list-group-item list-group-item-action py-1" href="https://matplotlib.org/devdocs/index.html" data-version-name="3.10 (dev)" data-version="dev"><span>3.10 (dev)</span></a><a class="list-group-item list-group-item-action py-1" href="https://matplotlib.org/3.8.4/index.html" data-version-name="3.8" data-version="3.8.4"><span>3.8</span></a><a class="list-group-item list-group-item-action py-1" href="https://matplotlib.org/3.7.5/index.html" data-version-name="3.7" data-version="3.7.5"><span>3.7</span></a><a class="list-group-item list-group-item-action py-1" href="https://matplotlib.org/3.6.3/index.html" data-version-name="3.6" data-version="3.6.3"><span>3.6</span></a><a class="list-group-item list-group-item-action py-1" href="https://matplotlib.org/3.5.3/index.html" data-version-name="3.5" data-version="3.5.3"><span>3.5</span></a><a class="list-group-item list-group-item-action py-1" href="https://matplotlib.org/3.4.3/index.html" data-version-name="3.4" data-version="3.4.3"><span>3.4</span></a><a class="list-group-item list-group-item-action py-1" href="https://matplotlib.org/3.3.4/index.html" data-version-name="3.3" data-version="3.3.4"><span>3.3</span></a><a class="list-group-item list-group-item-action py-1" href="https://matplotlib.org/2.2.4/index.html" data-version-name="2.2" data-version="2.2.4"><span>2.2</span></a></div>
+  </div>
+</div>
+<div class="navbar-item"><ul class="navbar-icon-links navbar-nav" aria-label="Icon Links">
+<li class="nav-item">
+<a href="https://gitter.im/matplotlib/matplotlib" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Gitter"><span><i class="fa-brands fa-gitter"></i></span>
+<label class="sr-only">Gitter</label></a>
+</li>
+<li class="nav-item">
+<a href="https://discourse.matplotlib.org/" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Discourse"><span><i class="fa-brands fa-discourse"></i></span>
+<label class="sr-only">Discourse</label></a>
+</li>
+<li class="nav-item">
+<a href="https://github.com/matplotlib/matplotlib" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="GitHub"><span><i class="fa-brands fa-github"></i></span>
+<label class="sr-only">GitHub</label></a>
+</li>
+<li class="nav-item">
+<a href="https://twitter.com/matplotlib/" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Twitter"><span><i class="fa-brands fa-twitter"></i></span>
+<label class="sr-only">Twitter</label></a>
+</li>
+</ul></div>
+</div>
+</div>
+<div class="navbar-persistent--mobile">
+<script type="text/javascript">
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+  <button class="btn btn-sm navbar-btn search-button search-button__button" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip" data-bs-original-title="Search">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+
+</div>
+<label class="sidebar-toggle secondary-toggle" for="__secondary">
+<span class="fa-solid fa-outdent"></span>
+</label>
+</div>
+</nav>
+<div class="bd-container">
+<div class="bd-container__inner bd-page-width">
+<div class="bd-sidebar-primary bd-sidebar">
+<div class="sidebar-header-items sidebar-primary__section">
+<div class="sidebar-header-items__center">
+<div class="navbar-item"><ul id="navbar-main-elements" class="navbar-nav">
+<li class="nav-item">
+<a class="reference internal nav-link" href="https://matplotlib.org/3.8.3/plot_types/index.html">Plot types</a>
+</li>
+<li class="nav-item">
+<a class="reference internal nav-link" href="https://matplotlib.org/3.8.3/users/index.html">User guide</a>
+</li>
+<li class="nav-item">
+<a class="reference internal nav-link" href="https://matplotlib.org/3.8.3/tutorials/index.html">Tutorials</a>
+</li>
+<li class="nav-item">
+<a class="reference internal nav-link" href="https://matplotlib.org/3.8.3/gallery/index.html">Examples</a>
+</li>
+<li class="nav-item">
+<a class="reference internal nav-link" href="https://matplotlib.org/3.8.3/api/index.html">Reference</a>
+</li>
+<li class="nav-item">
+<a class="reference internal nav-link" href="https://matplotlib.org/3.8.3/devel/index.html">Contribute</a>
+</li>
+<li class="nav-item">
+<a class="reference internal nav-link" href="https://matplotlib.org/3.8.3/users/release_notes.html">Releases</a>
+</li>
+</ul></div>
+</div>
+<div class="sidebar-header-items__end">
+<div class="navbar-item">
+<script type="text/javascript">
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip" data-bs-original-title="light/dark">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+</div>
+<div class="navbar-item">
+<script type="text/javascript">
+document.write(`
+  <div class="version-switcher__container dropdown">
+    <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-bs-toggle="dropdown">
+      stable  <!-- this text may get changed later by javascript -->
+      <span class="caret"></span>
+    </button>
+    <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+  </div>
+`);
+</script>
+  <div class="version-switcher__container dropdown">
+    <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-bs-toggle="dropdown" data-active-version-name="" data-active-version="">
+      stable  <!-- this text may get changed later by javascript -->
+      <span class="caret"></span>
+    </button>
+    <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+  </div>
+</div>
+<div class="navbar-item"><ul class="navbar-icon-links navbar-nav" aria-label="Icon Links">
+<li class="nav-item">
+<a href="https://gitter.im/matplotlib/matplotlib" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Gitter"><span><i class="fa-brands fa-gitter"></i></span>
+<label class="sr-only">Gitter</label></a>
+</li>
+<li class="nav-item">
+<a href="https://discourse.matplotlib.org/" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Discourse"><span><i class="fa-brands fa-discourse"></i></span>
+<label class="sr-only">Discourse</label></a>
+</li>
+<li class="nav-item">
+<a href="https://github.com/matplotlib/matplotlib" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="GitHub"><span><i class="fa-brands fa-github"></i></span>
+<label class="sr-only">GitHub</label></a>
+</li>
+<li class="nav-item">
+<a href="https://twitter.com/matplotlib/" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Twitter"><span><i class="fa-brands fa-twitter"></i></span>
+<label class="sr-only">Twitter</label></a>
+</li>
+</ul></div>
+</div>
+</div>
+<div class="sidebar-primary-items__start sidebar-primary__section">
+<div class="sidebar-primary-item"><div class="sidebar-versions"><p><strong>Latest stable release</strong><br>
+3.8.3: <a href="https://matplotlib.org/3.8.3/index.html">docs</a> | <a href="https://matplotlib.org/3.8.3/users/release_notes.html">release notes</a></p>
+<p><strong>Last release for Python 2</strong><br>
+2.2.5: <a href="https://matplotlib.org/2.2.5/index.html">docs</a> | <a href="https://matplotlib.org/2.2.5/users/whats_new.html">changelog</a></p>
+<p><strong>Development version</strong><br>
+<a href="https://matplotlib.org/devdocs/index.html">docs</a></p>
+</div></div>
+<div class="sidebar-primary-item">
+<div class="sidebar-cheatsheets">
+<h3>Matplotlib cheatsheets</h3>
+<a href="https://matplotlib.org/cheatsheets/">
+<img src="Matplotlib%20documentation%20%E2%80%94%20Matplotlib%203.8.3%20documentation_files/mpl_cheatsheet1.png" alt="Matplotlib cheatsheets" srcset="Matplotlib%20documentation%20%E2%80%94%20Matplotlib%203.8.3%20documentation_files/mpl_cheatsheet1.png 1x, Matplotlib%20documentation%20%E2%80%94%20Matplotlib%203.8.3%20documentation_files/mpl_cheatsheet1_2x.png 2x">
+</a>
+</div></div>
+<div class="sidebar-primary-item"><div class="sidebar-donate">
+<a class="sd-btn sd-btn-primary sd-fs-5 sd-px-5 sd-py-2" href="https://numfocus.org/donate-to-matplotlib" target="_blank">
+Support Matplotlib
+</a>
+</div></div>
+</div>
+<div class="sidebar-primary-items__end sidebar-primary__section">
+</div>
+<div id="rtd-footer-container"></div>
+</div>
+<main id="main-content" class="bd-main">
+<div class="bd-content">
+<div class="bd-article-container">
+<div class="bd-header-article"></div>
+<div id="searchbox"></div>
+<article class="bd-article" role="main">
+<section id="matplotlib-release-documentation">
+<span id="module-matplotlib"></span><h1>Matplotlib 3.8.3 documentation<a class="headerlink" href="#matplotlib-release-documentation" title="Link to this heading">#</a></h1>
+<p>Matplotlib is a comprehensive library for creating static, animated,
+and interactive visualizations.</p>
+<section id="install">
+<h2>Install<a class="headerlink" href="#install" title="Link to this heading">#</a></h2>
+<div class="sd-tab-set sd-width-content-min docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-0">
+pip</label><div class="sd-tab-content docutils">
+<div class="highlight-bash notranslate"><div class="highlight"><pre id="codecell0"><span></span>pip<span class="w"> </span>install<span class="w"> </span>matplotlib
+</pre><button class="copybtn o-tooltip--left" data-tooltip="Copy" data-clipboard-target="#codecell0">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copy" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <title>Copy to clipboard</title>
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+  <rect x="8" y="8" width="12" height="12" rx="2"></rect>
+  <path d="M16 8v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2"></path>
+</svg>
+    </button></div>
+</div>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-1">
+conda</label><div class="sd-tab-content docutils">
+<div class="highlight-bash notranslate"><div class="highlight"><pre id="codecell1"><span></span>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>matplotlib
+</pre><button class="copybtn o-tooltip--left" data-tooltip="Copy" data-clipboard-target="#codecell1">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copy" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <title>Copy to clipboard</title>
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+  <rect x="8" y="8" width="12" height="12" rx="2"></rect>
+  <path d="M16 8v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2"></path>
+</svg>
+    </button></div>
+</div>
+</div>
+<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-2">
+other</label><div class="sd-tab-content docutils">
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://matplotlib.org/3.8.3/users/installing/index.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/3.8.3/users/installing/index.html#install-an-official-release">Install an official release</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/3.8.3/users/installing/index.html#third-party-distributions">Third-party distributions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/3.8.3/users/installing/index.html#install-a-nightly-build">Install a nightly build</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/3.8.3/users/installing/index.html#id1">Install from source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/3.8.3/users/installing/index.html#configure-build-and-behavior-defaults">Configure build and behavior defaults</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/3.8.3/users/installing/index.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/3.8.3/users/installing/index.html#frequently-asked-questions">Frequently asked questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/3.8.3/users/installing/index.html#troubleshooting">Troubleshooting</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<p>For more detailed instructions, see the
+<a class="reference internal" href="https://matplotlib.org/3.8.3/users/installing/index.html"><span class="doc">installation guide</span></a>.</p>
+</section>
+<section id="learn">
+<h2>Learn<a class="headerlink" href="#learn" title="Link to this heading">#</a></h2>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-row sd-col-6 sd-col-xs-6 sd-col-sm-6 sd-col-md-6 sd-col-lg-6 sd-p-2 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>How to use Matplotlib?</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://matplotlib.org/3.8.3/users/explain/quick_start.html">Quick start guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://matplotlib.org/3.8.3/users/index.html">User guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://matplotlib.org/3.8.3/tutorials/index.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://matplotlib.org/3.8.3/users/faq.html">Frequently Asked Questions</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-col-6 sd-col-xs-6 sd-col-sm-6 sd-col-md-6 sd-col-lg-6 sd-p-2 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>What can Matplotlib do?</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://matplotlib.org/3.8.3/plot_types/index.html">Plot types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://matplotlib.org/3.8.3/gallery/index.html">Examples</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-p-2 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Reference</strong></p>
+</div>
+<div class="sd-card-body docutils">
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-2 sd-row-cols-lg-2 sd-align-minor-center docutils">
+<div class="sd-col sd-d-flex-column docutils">
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://matplotlib.org/3.8.3/api/index.html">API reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://matplotlib.org/3.8.3/api/figure_api.html">Figure methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://matplotlib.org/3.8.3/api/axes_api.html">Plotting methods</a></li>
+</ul>
+</div>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<p class="sd-card-text">Top-level interfaces to create:</p>
+<ul class="simple">
+<li><p class="sd-card-text">figures: <a class="reference internal" href="https://matplotlib.org/3.8.3/api/_as_gen/matplotlib.pyplot.figure.html#matplotlib.pyplot.figure" title="matplotlib.pyplot.figure"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pyplot.figure</span></code></a></p></li>
+<li><p class="sd-card-text">subplots: <a class="reference internal" href="https://matplotlib.org/3.8.3/api/_as_gen/matplotlib.pyplot.subplots.html#matplotlib.pyplot.subplots" title="matplotlib.pyplot.subplots"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pyplot.subplots</span></code></a>, <a class="reference internal" href="https://matplotlib.org/3.8.3/api/_as_gen/matplotlib.pyplot.subplot_mosaic.html#matplotlib.pyplot.subplot_mosaic" title="matplotlib.pyplot.subplot_mosaic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pyplot.subplot_mosaic</span></code></a></p></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="community">
+<h2>Community<a class="headerlink" href="#community" title="Link to this heading">#</a></h2>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-2 sd-row-cols-lg-2 sd-align-minor-center docutils">
+<div class="sd-col sd-d-flex-column docutils">
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://matplotlib.org/3.8.3/users/resources/index.html">External resources</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/3.8.3/users/resources/index.html#books-chapters-and-articles">Books, chapters and articles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/3.8.3/users/resources/index.html#videos">Videos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/3.8.3/users/resources/index.html#tutorials">Tutorials</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<p><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-link-external sd-text-info" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 01.25.25v4.146a.25.25 0 01-.427.177L13.03 4.03 9.28 7.78a.75.75 0 01-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0110.604 1zM3.75 2A1.75 1.75 0 002 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0014 12.25v-3.5a.75.75 0 00-1.5 0v3.5a.25.25 0 01-.25.25h-8.5a.25.25 0 01-.25-.25v-8.5a.25.25 0 01.25-.25h3.5a.75.75 0 000-1.5h-3.5z"></path></svg> <a class="reference external" href="https://matplotlib.org/mpl-third-party/">Third-party packages</a>,</p>
+<p>provide custom, domain specific, and experimental features, including
+styles, colors, more plot types and backends, and alternative
+interfaces.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="what-s-new">
+<h2>What's new<a class="headerlink" href="#what-s-new" title="Link to this heading">#</a></h2>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column docutils">
+<p>Learn about new features and API changes.</p>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://matplotlib.org/3.8.3/users/release_notes.html">Release notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://matplotlib.org/3.8.3/users/release_notes.html#past-versions">Past versions</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="contribute">
+<h2>Contribute<a class="headerlink" href="#contribute" title="Link to this heading">#</a></h2>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-2 sd-row-cols-lg-2 sd-align-minor-center docutils">
+<div class="sd-col sd-d-flex-column docutils">
+<p>Matplotlib is a community project maintained for and by its users.</p>
+<p>There are many ways you can help!</p>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://matplotlib.org/3.8.3/devel/index.html">Contribute</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/3.8.3/devel/index.html#new-contributors">New contributors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/3.8.3/devel/index.html#development-environment">Development environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/3.8.3/devel/index.html#policies-and-guidelines">Policies and guidelines</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="about-us">
+<h2>About us<a class="headerlink" href="#about-us" title="Link to this heading">#</a></h2>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-2 sd-row-cols-lg-2 sd-align-minor-center docutils">
+<div class="sd-col sd-d-flex-column docutils">
+<p>Matplotlib was created by neurobiologist John Hunter to work with EEG
+data. It grew to be used and developed by many people in many
+different fields. John's goal was that Matplotlib make easy things easy
+and hard things possible.</p>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://matplotlib.org/3.8.3/users/project/index.html">Project information</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/3.8.3/users/project/mission.html">Mission Statement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/3.8.3/users/project/history.html">History</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/3.8.3/users/project/code_of_conduct.html">Code of Conduct</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/3.8.3/users/project/citing.html">Citing Matplotlib</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/3.8.3/users/project/license.html">License</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/3.8.3/users/project/credits.html">Credits</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+</section>
+</article>
+</div>
+<div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+<div class="sidebar-secondary-item">
+<div class="page-toc tocsection onthispage">
+<i class="fa-solid fa-list"></i> On this page
+</div>
+<nav class="bd-toc-nav page-toc">
+<ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry active"><a class="reference internal nav-link active" href="#install">Install</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learn">Learn</a><ul class="nav section-nav flex-column">
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#community">Community</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-s-new">What's new</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contribute">Contribute</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#about-us">About us</a></li>
+</ul>
+</nav></div>
+</div></div>
+</div>
+<footer class="bd-footer-content">
+</footer>
+</main>
+</div>
+</div>
+
+<script src="Matplotlib%20documentation%20%E2%80%94%20Matplotlib%203.8.3%20documentation_files/bootstrap.js" type="text/javascript"></script>
+<script src="Matplotlib%20documentation%20%E2%80%94%20Matplotlib%203.8.3%20documentation_files/pydata-sphinx-theme.js" type="text/javascript"></script>
+<footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+<div class="footer-items__start">
+<div class="footer-item">
+<p class="copyright">
+© Copyright 2002–2012 John Hunter, Darren Dale, Eric Firing, Michael 
+Droettboom and the Matplotlib development team; 2012–2024 The Matplotlib
+ development team.
+<br>
+</p>
+</div>
+<div class="footer-item">
+<p class="sphinx-version">
+Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+<br>
+</p>
+</div>
+<div class="footer-item">
+<p class="sphinx-version">
+Built from v3.8.3-2-g6175ebf59d.
+<br>
+</p>
+</div>
+</div>
+<div class="footer-items__end">
+<div class="footer-item"><p class="theme-version">
+Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.13.3.
+</p></div>
+</div>
+</div>
+</footer>
+<script defer="defer" src="Matplotlib%20documentation%20%E2%80%94%20Matplotlib%203.8.3%20documentation_files/v55bfa2fee65d44688e90c00735ed189a1713218998793" integrity="sha512-FIKRFRxgD20moAo96hkZQy/5QojZDAbyx0mQ17jEGHCJc/vi0G2HXLtofwD7Q3NmivvP9at5EVgbRqOaOQb+Rg==" data-cf-beacon="{&quot;rayId&quot;:&quot;87cffb6c7e3e1f38&quot;,&quot;version&quot;:&quot;2024.4.1&quot;,&quot;token&quot;:&quot;0175964edbd040b6ac0bff692bcb22ec&quot;}" crossorigin="anonymous"></script>
+
+</body></html>
